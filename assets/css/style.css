@@ -1,0 +1,287 @@
+html,
+body {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --app-maroon: #882433;
+  --app-grey: #8c98a9;
+  --app-text-dark: #2e384d;
+}
+
+#landing-section {
+  position: relative;
+  height: 100vh;
+}
+
+.my-app-container {
+  /* margin: 20px; */
+}
+.land-flex {
+  display: flex;
+}
+
+.land-flex .left-side {
+  flex-basis: 30%;
+  height: 100vh;
+}
+.land-flex .left-side img {
+  height: 100vh;
+}
+
+.land-flex .right-side {
+  flex-basis: 70%;
+  background-image: url(../images/artboard-land.png);
+  background-size: cover;
+  background-color: var(--app-maroon);
+}
+
+.land-flex .right-side img {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.top-head {
+  background-image: url(../images/artboard-land.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 428px;
+}
+
+.form-flex {
+  display: flex;
+  height: 100vh;
+}
+
+.form-flex .left-side {
+  flex-basis: 50%;
+  background: #f9faff;
+}
+
+.form-flex .right-side {
+  flex-basis: 50%;
+  overflow-y: scroll;
+  /* z-index: -99; */
+}
+
+.form-header {
+  position: relative;
+  bottom: 50%;
+  font: 28px/32px Medium;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-btn {
+  border: none;
+  background-color: var(--app-maroon);
+  color: #fff;
+  width: 100%;
+  margin: 15px auto;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.grey-text {
+  color: var(--app-grey);
+}
+
+.maroon-text {
+  color: var(--app-maroon);
+}
+
+.checkbox {
+  height: revert !important;
+}
+
+/* carousel */
+
+/* .carousel-caption {
+  position: relative;
+  left: 0;
+  text-align: center;
+} */
+
+.my-carousel-caption {
+  /* position: revert !important;
+  bottom: 20px;
+  left: 10% !important;
+  z-index: 10;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  color: #fff; */
+  /* position: relative;
+  left: 50%;
+  transform: translate(-50%, 0); */
+  margin: 40px auto;
+  text-align: center;
+}
+
+.carousel-indicators {
+  position: relative;
+  bottom: 0;
+  justify-content: left;
+  margin: 0 !important;
+}
+
+.carousel-inner {
+  text-align: center !important;
+}
+
+.carousel-indicators li {
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 12px;
+  height: 5px !important;
+  border-radius: 0 !important;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: var(--app-maroon) !important;
+  background-clip: initial;
+  border-top: 0 solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
+
+.auth-flex {
+  display: flex;
+}
+
+.auth-flex .left-side {
+  flex-basis: 60%;
+  align-self: center;
+}
+
+.auth-flex .right-side {
+  flex-basis: 40%;
+  background-color: var(--the-blue);
+  height: auto;
+  color: #fff;
+}
+
+.caption-name {
+  color: #3a4a56 !important;
+  text-align: center !important;
+  font-size: 20px;
+}
+
+.caption-description {
+  color: #788a98;
+  font-size: 14px;
+}
+
+.auth-carousel {
+  margin: 5rem;
+  /* margin: 0 auto; */
+}
+
+.form-container {
+  margin: 10rem;
+}
+
+.form-container .form-control {
+  background-color: #e0e7ff;
+  height: 60px !important;
+}
+
+.form-container select {
+  background: #e0e7ff;
+  height: 60px !important;
+}
+
+.form-container label {
+  color: var(--app-grey);
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.faded {
+  background: #edf0f9;
+  color: black;
+}
+
+.right-head {
+  height: 175px;
+  background: #ffffff;
+  box-shadow: 0px 3px 6px #0000000d;
+  /* opacity: 1; */
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+.auth-form input {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+}
+.auth-form label {
+  padding-top: 1rem;
+}
+
+.submit-btn {
+  background-color: #fa949d;
+  color: #fff;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.auth-logo {
+  margin-bottom: 2rem;
+  font-size: 18px;
+}
+
+.legal-statements {
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .form-flex {
+    display: block;
+  }
+  .form-flex .left-side {
+    display: none;
+  }
+  .auth-flex .right-side h4 {
+    font-size: 1.3rem;
+  }
+
+  .form-flex .right-side {
+    height: auto;
+    padding: 30px;
+  }
+
+  .right-head {
+    height: 0;
+    background: #ffffff;
+    box-shadow: 0px 3px 6px #0000000d;
+    /* opacity: 1; */
+    position: relative;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .form-flex .right-side select {
+    margin-top: 10px;
+  }
+
+  .form-container {
+    margin: 1rem;
+  }
+}
