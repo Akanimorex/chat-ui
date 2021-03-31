@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta char set="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/chat.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <title>chat</title>
+  </head>
+  <body>
+    <section>
+      <div class="">
+        <div class="form-flex">
+          <div class="chat-left-side">
+            <div class="chat-head">
+              <div>
+                <img src="assets/images/1.png" class="img-fluid" alt="" />
+              </div>
+              <div class="chat-head-icons">
+                <div><img src="assets/svgs/add.svg" alt="" /></div>
+                <div>
+                  <img src="assets/svgs/Icons-search-gray.svg" alt="" />
+                </div>
+                <div class="dropdown">
+                  <div
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <img src="assets/svgs/icons-dark-more.svg" alt="" />
+                  </div>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">
+                      <span
+                        class="iconify"
+                        data-icon="carbon:arrows-vertical"
+                        data-inline="false"
+                      ></span>
+                      Sort By (A/Z,Z/A)
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <span
+                        class="iconify"
+                        data-icon="codicon:feedback"
+                        data-inline="false"
+                      ></span>
+                      Feedback
+                    </a>
+                    <a class="dropdown-item" href="#"
+                      ><span
+                        class="iconify"
+                        data-icon="bytesize:user"
+                        data-inline="false"
+                      ></span
+                      >My Profile</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chat-body">
+              <nav>
+                <div class="nav chat-nav" id="nav-tab" role="tablist">
+                  <a
+                    class="nav-item nav-link active"
+                    id="nav-home-tab"
+                    data-toggle="tab"
+                    href="#nav-home"
+                    role="tab"
+                    aria-controls="nav-home"
+                    aria-selected="true"
+                    >INTEREST</a
+                  >
+                  <a
+                    class="nav-item nav-link"
+                    id="nav-profile-tab"
+                    data-toggle="tab"
+                    href="#nav-profile"
+                    role="tab"
+                    aria-controls="nav-profile"
+                    aria-selected="false"
+                    >DISCOVER</a
+                  >
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="nav-home"
+                  role="tabpanel"
+                  aria-labelledby="nav-home-tab"
+                >
+                  <div class="chat-list">
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="nav-profile"
+                  role="tabpanel"
+                  aria-labelledby="nav-profile-tab"
+                >
+                  <div class="chat-list">
+                    <div class="chat-block">
+                      <div class="chat-block_flex_between pl-3 pr-3">
+                        <div class="d-flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <strong class="strong">Sport</strong>
+                        </div>
+                        <div class="add-icon-container">
+                          <img
+                            src="assets/images/add-white.svg"
+                            class="add-icon"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex_between pl-3 pr-3">
+                        <div class="d-flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <strong class="strong">Sport</strong>
+                        </div>
+                        <div class="add-icon-container">
+                          <img
+                            src="assets/images/add-white.svg"
+                            class="add-icon"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex_between pl-3 pr-3">
+                        <div class="d-flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <strong class="strong">Sport</strong>
+                        </div>
+                        <div class="add-icon-container">
+                          <img
+                            src="assets/images/add-white.svg"
+                            class="add-icon"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex_between pl-3 pr-3">
+                        <div class="d-flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <strong class="strong">Sport</strong>
+                        </div>
+                        <div class="add-icon-container">
+                          <img
+                            src="assets/images/add-white.svg"
+                            class="add-icon"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex_between pl-3 pr-3">
+                        <div class="d-flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <strong class="strong">Sport</strong>
+                        </div>
+                        <div class="add-icon-container">
+                          <img
+                            src="assets/images/add-white.svg"
+                            class="add-icon"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- profile  section -->
+          <div class="chat-messages_2">
+            <div class="chat-container">
+              <div class="messages-head d-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="chat-block_flex">
+                    <div class="pl-2">
+                      <strong>Feedback@classic</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="grey-icons" style="font-size: 20px">
+                  <span
+                    class="iconify"
+                    data-icon="ph:dots-three-vertical-bold"
+                    data-inline="false"
+                  ></span>
+                </div>
+              </div>
+              <hr />
+
+              <div class="message-box">
+                <div class="">
+                  <div class="feedback-msg">
+                    <span
+                      >"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      officia deserunt mollit anim id est laborum."</span
+                    >
+
+                    <p class="time-stamp pt-4">Feb 20|11:30pm</p>
+                  </div>
+
+                  <div class="reply-msg">
+                    <span>We (Classic) have received the feedback</span>
+                  </div>
+                </div>
+              </div>
+              <div class="type-box">
+                <div class="type-container">
+                  <div class="type-group">
+                    <div>
+                      <span
+                        class="iconify"
+                        data-icon="subway:pin"
+                        data-inline="false"
+                      ></span>
+                    </div>
+                    <div class="d-flex fake-text-field">
+                      <div id="emoji">
+                        <span
+                          class="iconify"
+                          data-icon="ph:smiley-fill"
+                          data-inline="false"
+                        ></span>
+                      </div>
+                      <input
+                        type="text"
+                        placeholder="Type your messages"
+                        class="text-field"
+                      />
+                      <div>
+                        <span
+                          class="iconify"
+                          data-icon="fluent:send-24-filled"
+                          data-inline="false"
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- members section -->
+          <div class="chat-messages_3">
+            <div>
+              <div class="messages-head d-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="chat-block_flex">
+                    <div class="pl-2 grey-text" style="align-self: center">
+                      <strong>ALL MEMBERS</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="grey-icons">
+                  <span
+                    class="iconify"
+                    data-icon="carbon:search"
+                    data-inline="false"
+                  ></span>
+                  <span
+                    class="iconify"
+                    data-icon="ph:dots-three-vertical-bold"
+                    data-inline="false"
+                  ></span>
+                </div>
+              </div>
+              <hr />
+              <!-- after the head, the listing of the body -->
+              <div class="member-list">
+                <div class="chat-block">
+                  <div class="chat-block_flex_between pl-3 pr-3">
+                    <div class="d-flex">
+                      <div class="chat-block_flex_img_container">
+                        <img
+                          src="assets/images/chat-img.png"
+                          class="img-fluid member-img"
+                          alt="chat-logo"
+                        />
+                      </div>
+                      <strong class="strong member-name pl-2">Felix</strong>
+                    </div>
+                    <div class="profile-more">
+                      <span
+                        class="iconify"
+                        data-icon="fe:arrow-right"
+                        data-inline="false"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-block">
+                  <div class="chat-block_flex_between pl-3 pr-3">
+                    <div class="d-flex">
+                      <div class="chat-block_flex_img_container">
+                        <img
+                          src="assets/images/chat-img.png"
+                          class="img-fluid member-img"
+                          alt="chat-logo"
+                        />
+                      </div>
+                      <strong class="strong member-name pl-2">Felix</strong>
+                    </div>
+                    <div class="profile-more">
+                      <span
+                        class="iconify"
+                        data-icon="fe:arrow-right"
+                        data-inline="false"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-block">
+                  <div class="chat-block_flex_between pl-3 pr-3">
+                    <div class="d-flex">
+                      <div class="chat-block_flex_img_container">
+                        <img
+                          src="assets/images/chat-img.png"
+                          class="img-fluid member-img"
+                          alt="chat-logo"
+                        />
+                      </div>
+                      <strong class="strong member-name pl-2">Felix</strong>
+                    </div>
+                    <div class="profile-more">
+                      <span
+                        class="iconify"
+                        data-icon="fe:arrow-right"
+                        data-inline="false"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-block">
+                  <div class="chat-block_flex_between pl-3 pr-3">
+                    <div class="d-flex">
+                      <div class="chat-block_flex_img_container">
+                        <img
+                          src="assets/images/chat-img.png"
+                          class="img-fluid member-img"
+                          alt="chat-logo"
+                        />
+                      </div>
+                      <strong class="strong member-name pl-2">Felix</strong>
+                    </div>
+                    <div class="profile-more">
+                      <span
+                        class="iconify"
+                        data-icon="fe:arrow-right"
+                        data-inline="false"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-block">
+                  <div class="chat-block_flex_between pl-3 pr-3">
+                    <div class="d-flex">
+                      <div class="chat-block_flex_img_container">
+                        <img
+                          src="assets/images/chat-img.png"
+                          class="img-fluid member-img"
+                          alt="chat-logo"
+                        />
+                      </div>
+                      <strong class="strong member-name pl-2">Felix</strong>
+                    </div>
+                    <div class="profile-more">
+                      <span
+                        class="iconify"
+                        data-icon="fe:arrow-right"
+                        data-inline="false"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-block">
+                  <div class="chat-block_flex_between pl-3 pr-3">
+                    <div class="d-flex">
+                      <div class="chat-block_flex_img_container">
+                        <img
+                          src="assets/images/chat-img.png"
+                          class="img-fluid member-img"
+                          alt="chat-logo"
+                        />
+                      </div>
+                      <strong class="strong member-name pl-2">Felix</strong>
+                    </div>
+                    <div class="profile-more">
+                      <span
+                        class="iconify"
+                        data-icon="fe:arrow-right"
+                        data-inline="false"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-block">
+                  <div class="chat-block_flex_between pl-3 pr-3">
+                    <div class="d-flex">
+                      <div class="chat-block_flex_img_container">
+                        <img
+                          src="assets/images/chat-img.png"
+                          class="img-fluid member-img"
+                          alt="chat-logo"
+                        />
+                      </div>
+                      <strong class="strong member-name pl-2">Felix</strong>
+                    </div>
+                    <div class="profile-more">
+                      <span
+                        class="iconify"
+                        data-icon="fe:arrow-right"
+                        data-inline="false"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-block">
+                  <div class="chat-block_flex_between pl-3 pr-3">
+                    <div class="d-flex">
+                      <div class="chat-block_flex_img_container">
+                        <img
+                          src="assets/images/chat-img.png"
+                          class="img-fluid member-img"
+                          alt="chat-logo"
+                        />
+                      </div>
+                      <strong class="strong member-name pl-2">Felix</strong>
+                    </div>
+                    <div class="profile-more">
+                      <span
+                        class="iconify"
+                        data-icon="fe:arrow-right"
+                        data-inline="false"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="chat-block">
+                  <div class="chat-block_flex_between pl-3 pr-3">
+                    <div class="d-flex">
+                      <div class="chat-block_flex_img_container">
+                        <img
+                          src="assets/images/chat-img.png"
+                          class="img-fluid member-img"
+                          alt="chat-logo"
+                        />
+                      </div>
+                      <strong class="strong member-name pl-2">Felix</strong>
+                    </div>
+                    <div class="profile-more">
+                      <span
+                        class="iconify"
+                        data-icon="fe:arrow-right"
+                        data-inline="false"
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  </body>
+</html>

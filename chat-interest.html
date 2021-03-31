@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-    <title>register</title>
+    <title>chat</title>
   </head>
   <body>
     <section>
       <div>
-        <div class="chat-flex">
-          <div class="left-side">
+        <div class="form-flex">
+          <div class="chat-left-side">
             <div class="chat-head">
               <div>
                 <img src="assets/images/1.png" class="img-fluid" alt="" />
@@ -28,7 +28,46 @@
                 <div>
                   <img src="assets/svgs/Icons-search-gray.svg" alt="" />
                 </div>
-                <div><img src="assets/svgs/icons-dark-more.svg" alt="" /></div>
+                <div class="dropdown">
+                  <div
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    <img src="assets/svgs/icons-dark-more.svg" alt="" />
+                  </div>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">
+                      <span
+                        class="iconify"
+                        data-icon="carbon:arrows-vertical"
+                        data-inline="false"
+                      ></span>
+                      Sort By (A/Z,Z/A)
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <span
+                        class="iconify"
+                        data-icon="codicon:feedback"
+                        data-inline="false"
+                      ></span>
+                      Feedback
+                    </a>
+                    <a class="dropdown-item" href="#"
+                      ><span
+                        class="iconify"
+                        data-icon="bytesize:user"
+                        data-inline="false"
+                      ></span
+                      >My Profile</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
             <div class="chat-body">
@@ -64,33 +103,9 @@
                   aria-labelledby="nav-home-tab"
                 >
                   <div class="chat-list">
-                    <div class="chat-block">
-                      <div class="chat-block_flex">
-                        <div class="chat-block_flex_img_container">
-                          <img
-                            src="assets/images/chat-img.png"
-                            class="img-fluid"
-                            alt="chat-logo"
-                          />
-                          <span class="total-members">99+</span>
-                        </div>
-                        <div>
-                          <strong>Sport</strong>
-                          <figcaption class="chat-intro">
-                            Really,I thought we were going to be friends...
-                          </figcaption>
-                        </div>
-                        <div>
-                          <figcaption><b>11:00PM</b></figcaption>
-                          <figcaption>
-                            <div class="number-badge">113</div>
-                          </figcaption>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="chat-block">
-                      <div class="chat-block_flex">
-                        <div class="chat-block_flex_img_container">
+                    <a href="chat-messages.html" class="link-to-page">
+                      <div class="chat-block">
+                        <div class="chat-block_flex">
                           <div class="chat-block_flex_img_container">
                             <img
                               src="assets/images/chat-img.png"
@@ -99,117 +114,359 @@
                             />
                             <span class="total-members">99+</span>
                           </div>
-                        </div>
-                        <div>
-                          <strong>Sport</strong>
-                          <figcaption class="chat-intro">
-                            Really,I thought we were going to be friends...
-                          </figcaption>
-                        </div>
-                        <div>
-                          <figcaption><b>11:00PM</b></figcaption>
-                          <figcaption>
-                            <div class="number-badge">113</div>
-                          </figcaption>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="chat-block">
-                      <div class="chat-block_flex">
-                        <div class="chat-block_flex_img_container">
-                          <img
-                            src="assets/images/chat-img.png"
-                            class="img-fluid"
-                            alt="chat-logo"
-                          />
-                          <span class="total-members">99+</span>
-                        </div>
-                        <div>
-                          <strong>Sport</strong>
-                          <figcaption class="chat-intro">
-                            Really,I thought we were going to be friends...
-                          </figcaption>
-                        </div>
-                        <div>
-                          <figcaption><b>11:00PM</b></figcaption>
-                          <figcaption>
-                            <div class="number-badge">113</div>
-                          </figcaption>
+                          <div>
+                            <strong>Sport</strong>
+                            <figcaption class="chat-intro">
+                              Really,I thought we were going to be friends...
+                            </figcaption>
+                          </div>
+                          <div>
+                            <figcaption><b>11:00PM</b></figcaption>
+                            <figcaption>
+                              <div class="number-badge">113</div>
+                            </figcaption>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="chat-block">
-                      <div class="chat-block_flex">
-                        <div class="chat-block_flex_img_container">
-                          <img
-                            src="assets/images/chat-img.png"
-                            class="img-fluid"
-                            alt="chat-logo"
-                          />
-                          <span class="total-members">99+</span>
-                        </div>
-                        <div>
-                          <strong>Sport</strong>
-                          <figcaption class="chat-intro">
-                            Really,I thought we were going to be friends...
-                          </figcaption>
-                        </div>
-                        <div>
-                          <figcaption><b>11:00PM</b></figcaption>
-                          <figcaption>
-                            <div class="number-badge">113</div>
-                          </figcaption>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="chat-block">
-                      <div class="chat-block_flex">
-                        <div class="chat-block_flex_img_container">
-                          <img
-                            src="assets/images/chat-img.png"
-                            class="img-fluid"
-                            alt="chat-logo"
-                          />
-                          <span class="total-members">99+</span>
-                        </div>
-                        <div>
-                          <strong>Sport</strong>
-                          <figcaption class="chat-intro">
-                            Really,I thought we were going to be friends...
-                          </figcaption>
-                        </div>
-                        <div>
-                          <figcaption><b>11:00PM</b></figcaption>
-                          <figcaption>
-                            <div class="number-badge">113</div>
-                          </figcaption>
+                    </a>
+                    <a href="chat-messages.html" class="link-to-page">
+                      <div class="chat-block">
+                        <div class="chat-block_flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <div>
+                            <strong>Sport</strong>
+                            <figcaption class="chat-intro">
+                              Really,I thought we were going to be friends...
+                            </figcaption>
+                          </div>
+                          <div>
+                            <figcaption><b>11:00PM</b></figcaption>
+                            <figcaption>
+                              <div class="number-badge">113</div>
+                            </figcaption>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="chat-block">
-                      <div class="chat-block_flex">
-                        <div class="chat-block_flex_img_container">
-                          <img
-                            src="assets/images/chat-img.png"
-                            class="img-fluid"
-                            alt="chat-logo"
-                          />
-                          <span class="total-members">99+</span>
-                        </div>
-                        <div>
-                          <strong>Sport</strong>
-                          <figcaption class="chat-intro">
-                            Really,I thought we were going to be friends...
-                          </figcaption>
-                        </div>
-                        <div>
-                          <figcaption><b>11:00PM</b></figcaption>
-                          <figcaption>
-                            <div class="number-badge">113</div>
-                          </figcaption>
+                    </a>
+                    <a href="chat-messages.html" class="link-to-page">
+                      <div class="chat-block">
+                        <div class="chat-block_flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <div>
+                            <strong>Sport</strong>
+                            <figcaption class="chat-intro">
+                              Really,I thought we were going to be friends...
+                            </figcaption>
+                          </div>
+                          <div>
+                            <figcaption><b>11:00PM</b></figcaption>
+                            <figcaption>
+                              <div class="number-badge">113</div>
+                            </figcaption>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </a>
+                    <a href="chat-messages.html" class="link-to-page">
+                      <div class="chat-block">
+                        <div class="chat-block_flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <div>
+                            <strong>Sport</strong>
+                            <figcaption class="chat-intro">
+                              Really,I thought we were going to be friends...
+                            </figcaption>
+                          </div>
+                          <div>
+                            <figcaption><b>11:00PM</b></figcaption>
+                            <figcaption>
+                              <div class="number-badge">113</div>
+                            </figcaption>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="chat-messages.html" class="link-to-page">
+                      <div class="chat-block">
+                        <div class="chat-block_flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <div>
+                            <strong>Sport</strong>
+                            <figcaption class="chat-intro">
+                              Really,I thought we were going to be friends...
+                            </figcaption>
+                          </div>
+                          <div>
+                            <figcaption><b>11:00PM</b></figcaption>
+                            <figcaption>
+                              <div class="number-badge">113</div>
+                            </figcaption>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="chat-messages.html" class="link-to-page">
+                      <div class="chat-block">
+                        <div class="chat-block_flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <div>
+                            <strong>Sport</strong>
+                            <figcaption class="chat-intro">
+                              Really,I thought we were going to be friends...
+                            </figcaption>
+                          </div>
+                          <div>
+                            <figcaption><b>11:00PM</b></figcaption>
+                            <figcaption>
+                              <div class="number-badge">113</div>
+                            </figcaption>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="chat-messages.html" class="link-to-page">
+                      <div class="chat-block">
+                        <div class="chat-block_flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <div>
+                            <strong>Sport</strong>
+                            <figcaption class="chat-intro">
+                              Really,I thought we were going to be friends...
+                            </figcaption>
+                          </div>
+                          <div>
+                            <figcaption><b>11:00PM</b></figcaption>
+                            <figcaption>
+                              <div class="number-badge">113</div>
+                            </figcaption>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="chat-messages.html" class="link-to-page">
+                      <div class="chat-block">
+                        <div class="chat-block_flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <div>
+                            <strong>Sport</strong>
+                            <figcaption class="chat-intro">
+                              Really,I thought we were going to be friends...
+                            </figcaption>
+                          </div>
+                          <div>
+                            <figcaption><b>11:00PM</b></figcaption>
+                            <figcaption>
+                              <div class="number-badge">113</div>
+                            </figcaption>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="chat-messages.html" class="link-to-page">
+                      <div class="chat-block">
+                        <div class="chat-block_flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <div>
+                            <strong>Sport</strong>
+                            <figcaption class="chat-intro">
+                              Really,I thought we were going to be friends...
+                            </figcaption>
+                          </div>
+                          <div>
+                            <figcaption><b>11:00PM</b></figcaption>
+                            <figcaption>
+                              <div class="number-badge">113</div>
+                            </figcaption>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="chat-messages.html" class="link-to-page">
+                      <div class="chat-block">
+                        <div class="chat-block_flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <div>
+                            <strong>Sport</strong>
+                            <figcaption class="chat-intro">
+                              Really,I thought we were going to be friends...
+                            </figcaption>
+                          </div>
+                          <div>
+                            <figcaption><b>11:00PM</b></figcaption>
+                            <figcaption>
+                              <div class="number-badge">113</div>
+                            </figcaption>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="chat-messages.html" class="link-to-page">
+                      <div class="chat-block">
+                        <div class="chat-block_flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <div>
+                            <strong>Sport</strong>
+                            <figcaption class="chat-intro">
+                              Really,I thought we were going to be friends...
+                            </figcaption>
+                          </div>
+                          <div>
+                            <figcaption><b>11:00PM</b></figcaption>
+                            <figcaption>
+                              <div class="number-badge">113</div>
+                            </figcaption>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="chat-messages.html" class="link-to-page">
+                      <div class="chat-block">
+                        <div class="chat-block_flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <div>
+                            <strong>Sport</strong>
+                            <figcaption class="chat-intro">
+                              Really,I thought we were going to be friends...
+                            </figcaption>
+                          </div>
+                          <div>
+                            <figcaption><b>11:00PM</b></figcaption>
+                            <figcaption>
+                              <div class="number-badge">113</div>
+                            </figcaption>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="chat-messages.html" class="link-to-page">
+                      <div class="chat-block">
+                        <div class="chat-block_flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <div>
+                            <strong>Sport</strong>
+                            <figcaption class="chat-intro">
+                              Really,I thought we were going to be friends...
+                            </figcaption>
+                          </div>
+                          <div>
+                            <figcaption><b>11:00PM</b></figcaption>
+                            <figcaption>
+                              <div class="number-badge">113</div>
+                            </figcaption>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="chat-messages.html" class="link-to-page">
+                      <div class="chat-block">
+                        <div class="chat-block_flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <div>
+                            <strong>Sport</strong>
+                            <figcaption class="chat-intro">
+                              Really,I thought we were going to be friends...
+                            </figcaption>
+                          </div>
+                          <div>
+                            <figcaption><b>11:00PM</b></figcaption>
+                            <figcaption>
+                              <div class="number-badge">113</div>
+                            </figcaption>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
                 <div
@@ -218,12 +475,123 @@
                   role="tabpanel"
                   aria-labelledby="nav-profile-tab"
                 >
-                  ...
+                  <div class="chat-list">
+                    <div class="chat-block">
+                      <div class="chat-block_flex_between pl-3 pr-3">
+                        <div class="d-flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <strong class="strong">Spirituals</strong>
+                        </div>
+                        <div class="add-icon-container">
+                          <img
+                            src="assets/images/add-white.svg"
+                            class="add-icon"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex_between pl-3 pr-3">
+                        <div class="d-flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <strong class="strong">Sport</strong>
+                        </div>
+                        <div class="add-icon-container">
+                          <img
+                            src="assets/images/add-white.svg"
+                            class="add-icon"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex_between pl-3 pr-3">
+                        <div class="d-flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <strong class="strong">Sport</strong>
+                        </div>
+                        <div class="add-icon-container">
+                          <img
+                            src="assets/images/add-white.svg"
+                            class="add-icon"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex_between pl-3 pr-3">
+                        <div class="d-flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <strong class="strong">Sport</strong>
+                        </div>
+                        <div class="add-icon-container">
+                          <img
+                            src="assets/images/add-white.svg"
+                            class="add-icon"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex_between pl-3 pr-3">
+                        <div class="d-flex">
+                          <div class="chat-block_flex_img_container">
+                            <img
+                              src="assets/images/chat-img.png"
+                              class="img-fluid"
+                              alt="chat-logo"
+                            />
+                            <span class="total-members">99+</span>
+                          </div>
+                          <strong class="strong">Sport</strong>
+                        </div>
+                        <div class="add-icon-container">
+                          <img
+                            src="assets/images/add-white.svg"
+                            class="add-icon"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="right-side">
+          <div class="chat-right-side">
             <div class="form-container">
               <div class="text-center">
                 <img
@@ -251,5 +619,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   </body>
 </html>
