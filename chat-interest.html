@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="assets/css/chat.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/flex.css" />
 
     <title>chat</title>
   </head>
   <body>
     <section>
       <div>
-        <div class="form-flex">
+        <div class="the-flex">
           <div class="chat-left-side">
             <div class="chat-head">
               <div>
@@ -25,8 +26,17 @@
               </div>
               <div class="chat-head-icons">
                 <div><img src="assets/svgs/add.svg" alt="" /></div>
-                <div>
-                  <img src="assets/svgs/Icons-search-gray.svg" alt="" />
+                <div class="search-bar">
+                  <img
+                    class="search-icon"
+                    src="assets/svgs/Icons-search-gray.svg"
+                    alt=""
+                  />
+
+                  <form class="search" action="">
+                    <input class="search" type="text" placeholder="Search" />
+                    <img src="assets/svgs/tick.svg" alt="" />
+                  </form>
                 </div>
                 <div class="dropdown">
                   <div
@@ -35,6 +45,7 @@
                     data-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded="false"
+                    style="padding: 0; margin-top: 2.5px"
                   >
                     <img src="assets/svgs/icons-dark-more.svg" alt="" />
                   </div>
@@ -102,7 +113,7 @@
                   role="tabpanel"
                   aria-labelledby="nav-home-tab"
                 >
-                  <div class="chat-list">
+                  <div class="chat-list drop-right" id="chat">
                     <a href="chat-messages.html" class="link-to-page">
                       <div class="chat-block">
                         <div class="chat-block_flex">
@@ -127,6 +138,14 @@
                             </figcaption>
                           </div>
                         </div>
+                      </div>
+                      <div class="dropdown-menu delete-dropdown">
+                        <span
+                          class="iconify"
+                          data-icon="gridicons-trash"
+                          data-inline="false"
+                        ></span
+                        >Delete
                       </div>
                     </a>
                     <a href="chat-messages.html" class="link-to-page">
@@ -620,5 +639,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

@@ -34,6 +34,23 @@
   padding: 20px;
 }
 
+.messages-head {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 20px; */
+  padding: 30px;
+  height: 20vh;
+}
+
+.profile-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.profile-head span {
+  font-size: 13px;
+}
+
 .chat-head-icons {
   display: flex;
   justify-content: space-between;
@@ -115,6 +132,9 @@
 }
 .number-badge {
   height: auto;
+  width: -moz-fit-content;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
   background-color: var(--app-maroon);
   color: #fff;
@@ -129,10 +149,10 @@
   font-size: 13px;
 }
 
-.messages-head {
+/* .messages-head {
   padding: 30px;
   height: 20vh;
-}
+} */
 
 .message-chat {
   font-size: 10px !important;
@@ -177,6 +197,10 @@
   background-color: var(--app-maroon);
 }
 
+.message-box {
+  scrollbar-width: thin;
+  scrollbar-color: dark;
+}
 .profile {
   overflow-y: scroll;
 }
@@ -193,6 +217,11 @@
 
 .profile::-webkit-scrollbar-thumb {
   background-color: var(--app-maroon);
+}
+
+.profile {
+  scrollbar-width: thin;
+  scrollbar-color: dark;
 }
 
 .type-box {
@@ -214,7 +243,7 @@
 .fake-text-field {
   background: #f2f2f2;
   border-radius: 50px;
-  width: 356px;
+  width: fit-content;
   border: none;
   height: 35px;
 }
@@ -309,8 +338,32 @@
   top: 0;
   right: 0;
 }
+
+#file-upload {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: ponter;
+}
+
 .profile-icons {
   /* text-align: right; */
+}
+
+.modal-button {
+  background-color: var(--app-maroon);
+  color: #fff;
+  border: none;
+  padding: 10px;
+}
+
+.modal-button:hover {
+  box-shadow: ;
+}
+
+.modal input {
+  background-color: #e2e5f8;
 }
 
 .profile-icons .iconify {
@@ -336,11 +389,25 @@
   position: absolute;
   right: 0;
   top: 80%;
-  background-color: #feb727;
-  border-radius: 50%;
+  /* background-color: #feb727;
+  border-radius: 50%; */
   width: 40px;
   height: 40px;
   margin-right: 10px;
+}
+
+#cover-upload {
+  position: absolute;
+  opacity: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: red;
+  cursor: ponter;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .profile-icons-edit-cover .iconify {

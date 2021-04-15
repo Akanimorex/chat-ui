@@ -54,6 +54,24 @@ body {
   height: 428px;
 }
 
+.the-flex {
+  display: flex;
+  height: 100vh;
+}
+
+.chat-flex {
+  display: flex;
+  height: 100vh;
+}
+
+.forgot-password-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.forgot-link {
+  color: black !important;
+}
+
 .form-flex {
   display: flex;
   height: 100vh;
@@ -64,20 +82,20 @@ body {
   background: #f9faff;
 }
 
-.form-flex .chat-left-side {
-  flex-basis: 30%;
+.the-flex .chat-left-side {
+  flex-basis: 20%;
   overflow-y: scroll;
 }
-.form-flex .chat-right-side {
+.the-flex .chat-right-side {
   flex-basis: 70%;
 }
 
-.form-flex .chat-messages_2 {
-  flex-basis: 40%;
+.the-flex .chat-messages_2 {
+  flex-basis: 70%;
   /* overflow-y: scroll; */
 }
-.form-flex .chat-messages_3 {
-  flex-basis: 30%;
+.the-flex .chat-messages_3 {
+  flex-basis: 20%;
   /* overflow-y: scroll; */
 }
 
@@ -104,6 +122,11 @@ body {
 
 .chat-messages_3::-webkit-scrollbar-thumb {
   background-color: var(--app-maroon);
+}
+
+.chat-messages_3 {
+  scrollbar-width: thin;
+  scrollbar-color: dark;
 }
 
 .form-flex .chat-left-side::-webkit-scrollbar-track {
@@ -301,15 +324,51 @@ body {
   text-align: center;
 }
 
+.all-members strong {
+  font-size: 14px !important;
+}
+#members {
+  color: grey;
+}
+
+/* media queries */
+
 @media screen and (max-width: 768px) {
+  .mobile-container {
+    max-width: 1040px !important;
+  }
   .form-flex {
     display: block;
   }
+
   .form-flex .left-side {
     display: none;
   }
   .auth-flex .right-side h4 {
     font-size: 1.3rem;
+  }
+
+  .land-flex {
+    display: block;
+  }
+  .land-flex .left-side {
+    display: none;
+  }
+
+  .land-flex .right-side {
+    background-image: url(../images/artboard-land.png);
+    background-size: cover;
+    background-color: var(--app-maroon);
+    height: 100vh;
+  }
+
+  .land-flex .right-side img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
   }
 
   .form-flex .right-side {
@@ -331,7 +390,38 @@ body {
     margin-top: 10px;
   }
 
+  .form-flex {
+    display: block;
+    height: 100vh;
+  }
+
+  .form-flex .left-side {
+    /* flex-basis: 50%; */
+    background: #f9faff;
+  }
+
+  .the-flex {
+    display: block;
+  }
+
+  .the-flex .chat-left-side {
+    /* width: 100%;
+    background: red; */
+  }
+  .the-flex .chat-right-side {
+    display: none;
+  }
+
   .form-container {
     margin: 1rem;
+  }
+
+  .text-field {
+    background: #f2f2f2;
+    border-radius: 50px;
+    width: 150px;
+    border: none;
+    height: 35px;
+    font-size: 12px;
   }
 }

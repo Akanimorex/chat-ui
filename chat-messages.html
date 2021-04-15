@@ -11,13 +11,15 @@
     <link rel="stylesheet" href="assets/css/chat.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/flex.css" />
+    <link rel="icon" href="assets/images/1.png" />
 
     <title>chat</title>
   </head>
   <body>
     <section>
-      <div>
-        <div class="form-flex">
+      <div class="mobile-container">
+        <div class="chat-flex">
           <div class="chat-left-side">
             <div class="chat-head">
               <div>
@@ -25,8 +27,17 @@
               </div>
               <div class="chat-head-icons">
                 <div><img src="assets/svgs/add.svg" alt="" /></div>
-                <div>
-                  <img src="assets/svgs/Icons-search-gray.svg" alt="" />
+                <div class="search-bar">
+                  <img
+                    class="search-icon"
+                    src="assets/svgs/Icons-search-gray.svg"
+                    alt=""
+                  />
+
+                  <form class="search" action="">
+                    <input class="search" type="text" placeholder="Search" />
+                    <img src="assets/svgs/tick.svg" alt="" />
+                  </form>
                 </div>
                 <div class="dropdown">
                   <div
@@ -35,6 +46,7 @@
                     data-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded="false"
+                    style="padding: 0; margin-top: 2.5px"
                   >
                     <img src="assets/svgs/icons-dark-more.svg" alt="" />
                   </div>
@@ -126,32 +138,17 @@
                           </figcaption>
                         </div>
                       </div>
-                    </div>
-                    <div class="chat-block">
-                      <div class="chat-block_flex">
-                        <div class="chat-block_flex_img_container">
-                          <div class="chat-block_flex_img_container">
-                            <img
-                              src="assets/images/chat-img.png"
-                              class="img-fluid"
-                              alt="chat-logo"
-                            />
-                            <span class="total-members">99+</span>
-                          </div>
-                        </div>
-                        <div>
-                          <strong>Sport</strong>
-                          <figcaption class="chat-intro">
-                            Really,I thought we were going to be friends...
-                          </figcaption>
-                        </div>
-                        <div>
-                          <figcaption><b>11:00PM</b></figcaption>
-                          <figcaption>
-                            <div class="number-badge">113</div>
-                          </figcaption>
-                        </div>
-                      </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -176,6 +173,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -200,6 +208,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -224,6 +243,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -248,6 +278,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -272,6 +313,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -296,6 +348,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -320,6 +383,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -344,6 +418,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -368,6 +453,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -392,6 +488,192 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                   </div>
                 </div>
@@ -415,12 +697,67 @@
                           </div>
                           <strong class="strong">Sport</strong>
                         </div>
-                        <div class="add-icon-container">
+                        <div
+                          class="add-icon-container"
+                          type="button"
+                          data-toggle="modal"
+                          data-target="#addInterest"
+                          class="edit-link"
+                          class="edit-link"
+                        >
                           <img
                             src="assets/images/add-white.svg"
                             class="add-icon"
                             alt=""
                           />
+                        </div>
+                      </div>
+                      <!-- modal for adding interest -->
+                      <div
+                        class="modal fade"
+                        id="addInterest"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="editName"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="">
+                              <h4
+                                class="text-center font-weight-bold pt-3"
+                                id="exampleModalLongTitle"
+                              >
+                                Add 'sport' to Interests?
+                              </h4>
+                              <!-- <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button> -->
+                            </div>
+                            <div class="text-center">
+                              <div></div>
+                            </div>
+                            <div class="mx-auto pb-4">
+                              <button
+                                type="button"
+                                class="modal-button"
+                                data-dismiss="modal"
+                              >
+                                No
+                              </button>
+                              <button type="button" class="modal-button">
+                                Yes
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -437,12 +774,67 @@
                           </div>
                           <strong class="strong">Sport</strong>
                         </div>
-                        <div class="add-icon-container">
+                        <div
+                          class="add-icon-container"
+                          type="button"
+                          data-toggle="modal"
+                          data-target="#addInterest"
+                          class="edit-link"
+                          class="edit-link"
+                        >
                           <img
                             src="assets/images/add-white.svg"
                             class="add-icon"
                             alt=""
                           />
+                        </div>
+                      </div>
+                      <!-- modal for adding interest -->
+                      <div
+                        class="modal fade"
+                        id="addInterest"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="editName"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="">
+                              <h4
+                                class="text-center font-weight-bold pt-3"
+                                id="exampleModalLongTitle"
+                              >
+                                Add 'sport' to Interests?
+                              </h4>
+                              <!-- <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button> -->
+                            </div>
+                            <div class="text-center">
+                              <div></div>
+                            </div>
+                            <div class="mx-auto pb-4">
+                              <button
+                                type="button"
+                                class="modal-button"
+                                data-dismiss="modal"
+                              >
+                                No
+                              </button>
+                              <button type="button" class="modal-button">
+                                Yes
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -459,12 +851,67 @@
                           </div>
                           <strong class="strong">Sport</strong>
                         </div>
-                        <div class="add-icon-container">
+                        <div
+                          class="add-icon-container"
+                          type="button"
+                          data-toggle="modal"
+                          data-target="#addInterest"
+                          class="edit-link"
+                          class="edit-link"
+                        >
                           <img
                             src="assets/images/add-white.svg"
                             class="add-icon"
                             alt=""
                           />
+                        </div>
+                      </div>
+                      <!-- modal for adding interest -->
+                      <div
+                        class="modal fade"
+                        id="addInterest"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="editName"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="">
+                              <h4
+                                class="text-center font-weight-bold pt-3"
+                                id="exampleModalLongTitle"
+                              >
+                                Add 'sport' to Interests?
+                              </h4>
+                              <!-- <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button> -->
+                            </div>
+                            <div class="text-center">
+                              <div></div>
+                            </div>
+                            <div class="mx-auto pb-4">
+                              <button
+                                type="button"
+                                class="modal-button"
+                                data-dismiss="modal"
+                              >
+                                No
+                              </button>
+                              <button type="button" class="modal-button">
+                                Yes
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -481,12 +928,67 @@
                           </div>
                           <strong class="strong">Sport</strong>
                         </div>
-                        <div class="add-icon-container">
+                        <div
+                          class="add-icon-container"
+                          type="button"
+                          data-toggle="modal"
+                          data-target="#addInterest"
+                          class="edit-link"
+                          class="edit-link"
+                        >
                           <img
                             src="assets/images/add-white.svg"
                             class="add-icon"
                             alt=""
                           />
+                        </div>
+                      </div>
+                      <!-- modal for adding interest -->
+                      <div
+                        class="modal fade"
+                        id="addInterest"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="editName"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="">
+                              <h4
+                                class="text-center font-weight-bold pt-3"
+                                id="exampleModalLongTitle"
+                              >
+                                Add 'sport' to Interests?
+                              </h4>
+                              <!-- <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button> -->
+                            </div>
+                            <div class="text-center">
+                              <div></div>
+                            </div>
+                            <div class="mx-auto pb-4">
+                              <button
+                                type="button"
+                                class="modal-button"
+                                data-dismiss="modal"
+                              >
+                                No
+                              </button>
+                              <button type="button" class="modal-button">
+                                Yes
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -503,12 +1005,67 @@
                           </div>
                           <strong class="strong">Sport</strong>
                         </div>
-                        <div class="add-icon-container">
+                        <div
+                          class="add-icon-container"
+                          type="button"
+                          data-toggle="modal"
+                          data-target="#addInterest"
+                          class="edit-link"
+                          class="edit-link"
+                        >
                           <img
                             src="assets/images/add-white.svg"
                             class="add-icon"
                             alt=""
                           />
+                        </div>
+                      </div>
+                      <!-- modal for adding interest -->
+                      <div
+                        class="modal fade"
+                        id="addInterest"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="editName"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="">
+                              <h4
+                                class="text-center font-weight-bold pt-3"
+                                id="exampleModalLongTitle"
+                              >
+                                Add 'sport' to Interests?
+                              </h4>
+                              <!-- <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button> -->
+                            </div>
+                            <div class="text-center">
+                              <div></div>
+                            </div>
+                            <div class="mx-auto pb-4">
+                              <button
+                                type="button"
+                                class="modal-button"
+                                data-dismiss="modal"
+                              >
+                                No
+                              </button>
+                              <button type="button" class="modal-button">
+                                Yes
+                              </button>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -538,17 +1095,80 @@
                     </div>
                   </div>
                 </div>
-                <div class="grey-icons">
-                  <span
-                    class="iconify"
-                    data-icon="carbon:search"
-                    data-inline="false"
-                  ></span>
-                  <span
-                    class="iconify"
-                    data-icon="ph:dots-three-vertical-bold"
-                    data-inline="false"
-                  ></span>
+                <div class="grey-icons d-flex">
+                  <div class="search-bar">
+                    <!-- <img
+                      class="search-icon"
+                      src="assets/svgs/Icons-search-gray.svg"
+                      alt=""
+                    /> -->
+                    <div class="chat-search-icon">
+                      <span
+                        class="iconify"
+                        data-icon="carbon:search"
+                        data-inline="false"
+                      ></span>
+                    </div>
+
+                    <form class="chat-search inline-form" action="">
+                      <input
+                        class="profile-search chat-search"
+                        type="text"
+                        placeholder="Search"
+                      />
+                      <img
+                        style="align-self: baseline"
+                        src="assets/svgs/tick.svg"
+                        alt=""
+                      />
+                    </form>
+                  </div>
+
+                  <!-- mutumina -->
+                  <div class="dropdown" style="margin-top: -11px">
+                    <div
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <span
+                        class="iconify"
+                        data-icon="ph:dots-three-vertical-bold"
+                        data-inline="false"
+                      ></span>
+                    </div>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <a class="dropdown-item" href="#">
+                        <span
+                          class="iconify"
+                          data-icon="carbon:arrows-vertical"
+                          data-inline="false"
+                        ></span>
+                        Sort By (A/Z,Z/A)
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <span
+                          class="iconify"
+                          data-icon="codicon:feedback"
+                          data-inline="false"
+                        ></span>
+                        Feedback
+                      </a>
+                      <a class="dropdown-item" href="#"
+                        ><span
+                          class="iconify"
+                          data-icon="bytesize:user"
+                          data-inline="false"
+                        ></span
+                        >My Profile</a
+                      >
+                    </div>
+                  </div>
                 </div>
               </div>
               <hr />
@@ -621,13 +1241,28 @@
               <div class="type-box">
                 <div class="type-container">
                   <div class="type-group">
-                    <div>
-                      <span
-                        class="iconify"
-                        data-icon="subway:pin"
-                        data-inline="false"
-                      ></span>
-                    </div>
+                    <form action="post" id="image-form">
+                      <label
+                        class="attach-img"
+                        id="image-upload-label"
+                        for="file-upload"
+                      >
+                        <input
+                          accept="image/*"
+                          name="picture"
+                          type="file"
+                          id="file-upload"
+                          name=""
+                        />
+
+                        <span
+                          class="iconify"
+                          data-icon="subway:pin"
+                          data-inline="false"
+                        ></span>
+                      </label>
+                    </form>
+                    <div class="pr-4"></div>
                     <div class="d-flex fake-text-field">
                       <div id="emoji">
                         <span
@@ -642,6 +1277,7 @@
                         class="text-field"
                       />
                       <div>
+                        <!-- add onclick function to send message -->
                         <span
                           class="iconify"
                           data-icon="fluent:send-24-filled"
@@ -657,27 +1293,94 @@
           <!-- members section -->
           <div class="chat-messages_3">
             <div>
-              <div class="messages-head d-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="chat-block_flex">
-                    <div class="pl-2 grey-text" style="align-self: center">
-                      <strong>ALL MEMBERS</strong>
+              <div class="profile-head d-flex justify-content-between">
+                <div class="">
+                  <!-- <img src="assets/images/1.png" class="img-fluid" alt="" /> -->
+                  <strong id="members">ALL MEMBERS</strong>
+
+                  <!-- <div class="">
+
+                    <div
+                      class="pl-2 grey-text all-members"
+                      style="align-self: center"
+                    >
+                    
+                     
+                    </div>
+                  </div> -->
+                </div>
+                <div class="grey-icons d-flex">
+                  <div class="search-bar">
+                    <div class="my-profile-search">
+                      <span
+                        class="iconify"
+                        data-icon="carbon:search"
+                        data-inline="false"
+                      ></span>
+                    </div>
+
+                    <form class="profile-search inline-form" action="">
+                      <input
+                        class="profile-search"
+                        type="text"
+                        placeholder="Search"
+                      />
+                      <img
+                        style="align-self: baseline"
+                        src="assets/svgs/tick.svg"
+                        alt=""
+                      />
+                    </form>
+                  </div>
+
+                  <!-- dropdown -->
+                  <div class="dropdown" style="margin-top: -11px">
+                    <div
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <span
+                        class="iconify"
+                        data-icon="ph:dots-three-vertical-bold"
+                        data-inline="false"
+                      ></span>
+                    </div>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <a class="dropdown-item" href="#">
+                        <span
+                          class="iconify"
+                          data-icon="carbon:arrows-vertical"
+                          data-inline="false"
+                        ></span>
+                        Sort By (A/Z,Z/A)
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <span
+                          class="iconify"
+                          data-icon="codicon:feedback"
+                          data-inline="false"
+                        ></span>
+                        Feedback
+                      </a>
+                      <a class="dropdown-item" href="#"
+                        ><span
+                          class="iconify"
+                          data-icon="bytesize:user"
+                          data-inline="false"
+                        ></span
+                        >My Profile</a
+                      >
                     </div>
                   </div>
                 </div>
-                <div class="grey-icons">
-                  <span
-                    class="iconify"
-                    data-icon="carbon:search"
-                    data-inline="false"
-                  ></span>
-                  <span
-                    class="iconify"
-                    data-icon="ph:dots-three-vertical-bold"
-                    data-inline="false"
-                  ></span>
-                </div>
               </div>
+
               <hr />
               <!-- after the head, the listing of the body -->
               <div class="member-list">
@@ -882,5 +1585,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

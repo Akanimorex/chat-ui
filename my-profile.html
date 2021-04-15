@@ -8,16 +8,19 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="assets/css/chat.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/flex.css" />
+    <link rel="icon" href="assets/images/1.png" />
 
     <title>chat</title>
   </head>
   <body>
     <section>
-      <div class="">
-        <div class="form-flex">
+      <div class="mobile-container">
+        <div class="chat-flex">
           <div class="chat-left-side">
             <div class="chat-head">
               <div>
@@ -25,8 +28,17 @@
               </div>
               <div class="chat-head-icons">
                 <div><img src="assets/svgs/add.svg" alt="" /></div>
-                <div>
-                  <img src="assets/svgs/Icons-search-gray.svg" alt="" />
+                <div class="search-bar">
+                  <img
+                    class="search-icon"
+                    src="assets/svgs/Icons-search-gray.svg"
+                    alt=""
+                  />
+
+                  <form class="search" action="">
+                    <input class="search" type="text" placeholder="Search" />
+                    <img src="assets/svgs/tick.svg" alt="" />
+                  </form>
                 </div>
                 <div class="dropdown">
                   <div
@@ -35,6 +47,7 @@
                     data-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded="false"
+                    style="padding: 0; margin-top: 2.5px"
                   >
                     <img src="assets/svgs/icons-dark-more.svg" alt="" />
                   </div>
@@ -50,7 +63,7 @@
                       ></span>
                       Sort By (A/Z,Z/A)
                     </a>
-                    <a class="dropdown-item" href="feedback.html">
+                    <a class="dropdown-item" href="#">
                       <span
                         class="iconify"
                         data-icon="codicon:feedback"
@@ -126,32 +139,17 @@
                           </figcaption>
                         </div>
                       </div>
-                    </div>
-                    <div class="chat-block">
-                      <div class="chat-block_flex">
-                        <div class="chat-block_flex_img_container">
-                          <div class="chat-block_flex_img_container">
-                            <img
-                              src="assets/images/chat-img.png"
-                              class="img-fluid"
-                              alt="chat-logo"
-                            />
-                            <span class="total-members">99+</span>
-                          </div>
-                        </div>
-                        <div>
-                          <strong>Sport</strong>
-                          <figcaption class="chat-intro">
-                            Really,I thought we were going to be friends...
-                          </figcaption>
-                        </div>
-                        <div>
-                          <figcaption><b>11:00PM</b></figcaption>
-                          <figcaption>
-                            <div class="number-badge">113</div>
-                          </figcaption>
-                        </div>
-                      </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -176,6 +174,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -200,6 +209,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -224,6 +244,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -248,6 +279,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -272,6 +314,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -296,6 +349,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -320,6 +384,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -344,6 +419,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -368,6 +454,17 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                     <div class="chat-block">
                       <div class="chat-block_flex">
@@ -392,6 +489,192 @@
                           </figcaption>
                         </div>
                       </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
+                    </div>
+                    <div class="chat-block">
+                      <div class="chat-block_flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <div>
+                          <strong>Sport</strong>
+                          <figcaption class="chat-intro">
+                            Really,I thought we were going to be friends...
+                          </figcaption>
+                        </div>
+                        <div>
+                          <figcaption><b>11:00PM</b></figcaption>
+                          <figcaption>
+                            <div class="number-badge">113</div>
+                          </figcaption>
+                        </div>
+                      </div>
+                      <ul id="menu" class="menu">
+                        <li class="menu-item">
+                          <span
+                            class="iconify"
+                            data-icon="mdi-delete"
+                            data-inline="false"
+                          ></span
+                          >Delete
+                        </li>
+                      </ul>
+                      <div id="out-click" class="out-click"></div>
                     </div>
                   </div>
                 </div>
@@ -560,28 +843,53 @@
                   </div>
                 </div>
                 <div class="profile-icons-edit-cover">
-                  <span
-                    class="iconify"
-                    data-icon="clarity:edit-solid"
-                    data-inline="false"
-                  ></span>
+                  <form action="post" id="cover-img-form"></form>
+                  <label for="file-upload">
+                    <input
+                      accept="image/*"
+                      name="picture"
+                      type="file"
+                      id="cover-upload"
+                      name=""
+                    />
+                  </label>
+                  <img src="assets/svgs/yellow-edit.svg" alt="" />
                 </div>
               </div>
               <div class="profile-img-container">
-                <div>
-                  <img
-                    src="assets/images/profile-img.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-                <div class="edit-profile-img">
-                  <img
-                    src="assets/svgs/red-edit.svg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
+                <form action="post" id="image-form">
+                  <div>
+                    <img
+                      src="assets/images/profile-img.png"
+                      class="img-fluid"
+                      id="image-preview"
+                      alt="profile-img"
+                    />
+                  </div>
+                  <!-- <label class="green-color" id="image-upload-label" for="file-upload">
+                  <input  accept="image/*" name="picture" type="file" id="file-upload" name="">
+                  UPLOAD PHOTO
+                </label> -->
+                  <label
+                    class="edit-profile-img"
+                    id="image-upload-label"
+                    for="file-upload"
+                  >
+                    <input
+                      accept="image/*"
+                      name="picture"
+                      type="file"
+                      id="file-upload"
+                      name=""
+                    />
+
+                    <img
+                      src="assets/svgs/red-edit.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </label>
+                </form>
               </div>
             </div>
             <div>
@@ -607,7 +915,17 @@
                     <p class="details">Maria Snow</p>
                   </div>
                   <div>
-                    <p class="edit-link">Edit</p>
+                    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                      Launch demo modal
+                    </button> -->
+                    <p
+                      type="button"
+                      data-toggle="modal"
+                      data-target="#editName"
+                      class="edit-link"
+                    >
+                      Edit
+                    </p>
                   </div>
                 </div>
                 <div class="description-flex profile-description">
@@ -618,7 +936,15 @@
                     <p class="details">maria@gmail.com</p>
                   </div>
                   <div>
-                    <p class="edit-link">Edit</p>
+                    <p
+                      type="button"
+                      data-toggle="modal"
+                      data-target="#editEmail"
+                      class="edit-link"
+                      class="edit-link"
+                    >
+                      Edit
+                    </p>
                   </div>
                 </div>
                 <hr />
@@ -630,7 +956,15 @@
                     <p class="details">San Francisco, CA</p>
                   </div>
                   <div>
-                    <p class="edit-link">Edit</p>
+                    <p
+                      type="button"
+                      data-toggle="modal"
+                      data-target="#editLocation"
+                      class="edit-link"
+                      class="edit-link"
+                    >
+                      Edit
+                    </p>
                   </div>
                 </div>
                 <div class="description-flex profile-description">
@@ -649,29 +983,256 @@
                 </div>
               </div>
             </div>
+            <!-- Modal -->
+            <!-- modal for name -->
+            <div
+              class="modal fade"
+              id="editName"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="editName"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="">
+                    <h4
+                      class="text-center font-weight-bold pt-3"
+                      id="exampleModalLongTitle"
+                    >
+                      Edit UserName
+                    </h4>
+                    <!-- <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button> -->
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <form action="post" class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Maria Snow"
+                        />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="modal-button"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="modal-button">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- modal for email -->
+            <div
+              class="modal fade"
+              id="editEmail"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="editName"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="">
+                    <h4
+                      class="text-center font-weight-bold pt-3"
+                      id="exampleModalLongTitle"
+                    >
+                      Edit Email Address
+                    </h4>
+                    <!-- <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button> -->
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <form action="post" class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="maria@example.com"
+                        />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="modal-button"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="modal-button">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- modal for location -->
+            <div
+              class="modal fade"
+              id="editLocation"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="editName"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="">
+                    <h4
+                      class="text-center font-weight-bold pt-3"
+                      id="exampleModalLongTitle"
+                    >
+                      Edit Location
+                    </h4>
+                    <!-- <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button> -->
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <form action="post" class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Ontario, Canada"
+                        />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="modal-button"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="modal-button">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- members section -->
           <div class="chat-messages_3">
             <div>
-              <div class="messages-head d-flex justify-content-between">
-                <div class="d-flex">
-                  <div class="chat-block_flex">
-                    <div class="pl-2 grey-text" style="align-self: center">
-                      <strong>ALL MEMBERS</strong>
+              <div class="profile-head d-flex justify-content-between">
+                <div class="">
+                  <!-- <img src="assets/images/1.png" class="img-fluid" alt="" /> -->
+                  <strong id="members">ALL MEMBERS</strong>
+
+                  <!-- <div class="">
+
+                    <div
+                      class="pl-2 grey-text all-members"
+                      style="align-self: center"
+                    >
+                    
+                     
+                    </div>
+                  </div> -->
+                </div>
+                <div class="grey-icons d-flex">
+                  <div class="search-bar">
+                    <div class="my-profile-search">
+                      <span
+                        class="iconify"
+                        data-icon="carbon:search"
+                        data-inline="false"
+                      ></span>
+                    </div>
+
+                    <form class="profile-search inline-form" action="">
+                      <input
+                        class="profile-search"
+                        type="text"
+                        placeholder="Search"
+                      />
+                      <img
+                        style="align-self: baseline"
+                        src="assets/svgs/tick.svg"
+                        alt=""
+                      />
+                    </form>
+                  </div>
+
+                  <!-- dropdown -->
+                  <div class="dropdown" style="margin-top: -11px">
+                    <div
+                      type="button"
+                      id="dropdownMenuButton"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      <span
+                        class="iconify"
+                        data-icon="ph:dots-three-vertical-bold"
+                        data-inline="false"
+                      ></span>
+                    </div>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton"
+                    >
+                      <a class="dropdown-item" href="#">
+                        <span
+                          class="iconify"
+                          data-icon="carbon:arrows-vertical"
+                          data-inline="false"
+                        ></span>
+                        Sort By (A/Z,Z/A)
+                      </a>
+                      <a class="dropdown-item" href="#">
+                        <span
+                          class="iconify"
+                          data-icon="codicon:feedback"
+                          data-inline="false"
+                        ></span>
+                        Feedback
+                      </a>
+                      <a class="dropdown-item" href="#"
+                        ><span
+                          class="iconify"
+                          data-icon="bytesize:user"
+                          data-inline="false"
+                        ></span
+                        >My Profile</a
+                      >
                     </div>
                   </div>
-                </div>
-                <div class="grey-icons">
-                  <span
-                    class="iconify"
-                    data-icon="carbon:search"
-                    data-inline="false"
-                  ></span>
-                  <span
-                    class="iconify"
-                    data-icon="ph:dots-three-vertical-bold"
-                    data-inline="false"
-                  ></span>
                 </div>
               </div>
               <hr />
@@ -878,5 +1439,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
