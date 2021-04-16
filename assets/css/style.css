@@ -83,7 +83,7 @@ body {
 }
 
 .the-flex .chat-left-side {
-  flex-basis: 20%;
+  flex-basis: 30%;
   overflow-y: scroll;
 }
 .the-flex .chat-right-side {

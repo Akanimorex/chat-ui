@@ -4,11 +4,11 @@
 }
 
 .chat-flex .chat-left-side {
-  flex-basis: 27%;
+  flex-basis: 30%;
   overflow-y: scroll;
 }
 .chat-flex .chat-right-side {
-  flex-basis: 73%;
+  flex-basis: 70%;
 }
 
 .chat-flex .chat-messages_2 {

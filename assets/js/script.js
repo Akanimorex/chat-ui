@@ -1,8 +1,11 @@
 var icon = $(".search-icon");
 var form = $("form.search");
+var logo = $("#logo");
 
 icon.click(function () {
   form.toggleClass("open");
+  logo.toggleClass("all-members-none");
+
   if (form.hasClass("open")) {
     form.children("input.search").focus();
   }

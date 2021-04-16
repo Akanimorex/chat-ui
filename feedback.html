@@ -23,12 +23,17 @@
         <div class="chat-flex">
           <div class="chat-left-side">
             <div class="chat-head">
-              <div>
-                <img src="assets/images/1.png" class="img-fluid" alt="" />
+              <div class="logo">
+                <img
+                  id="logo"
+                  src="assets/images/1.png"
+                  class="img-fluid"
+                  alt=""
+                />
               </div>
               <div class="chat-head-icons">
-                <div><img src="assets/svgs/add.svg" alt="" /></div>
-                <div class="search-bar">
+                <div class=""><img src="assets/svgs/add.svg" alt="" /></div>
+                <div class="d-flex">
                   <img
                     class="search-icon"
                     src="assets/svgs/Icons-search-gray.svg"
@@ -638,118 +643,393 @@
                   role="tabpanel"
                   aria-labelledby="nav-profile-tab"
                 >
-                  <div class="chat-list">
-                    <div class="chat-block">
-                      <div class="chat-block_flex_between pl-3 pr-3">
-                        <div class="d-flex">
-                          <div class="chat-block_flex_img_container">
-                            <img
-                              src="assets/images/chat-img.png"
-                              class="img-fluid"
-                              alt="chat-logo"
-                            />
-                            <span class="total-members">99+</span>
-                          </div>
-                          <strong class="strong">Sport</strong>
-                        </div>
-                        <div class="add-icon-container">
+                <div class="chat-list">
+                  <div class="chat-block">
+                    <div class="chat-block_flex_between pl-3 pr-3">
+                      <div class="d-flex">
+                        <div class="chat-block_flex_img_container">
                           <img
-                            src="assets/images/add-white.svg"
-                            class="add-icon"
-                            alt=""
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
                           />
+                          <span class="total-members">99+</span>
                         </div>
+                        <strong class="strong">Sport</strong>
+                      </div>
+                      <div
+                        class="add-icon-container"
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#addInterest"
+                        class="edit-link"
+                        class="edit-link"
+                      >
+                        <img
+                          src="assets/images/add-white.svg"
+                          class="add-icon"
+                          alt=""
+                        />
                       </div>
                     </div>
-                    <div class="chat-block">
-                      <div class="chat-block_flex_between pl-3 pr-3">
-                        <div class="d-flex">
-                          <div class="chat-block_flex_img_container">
-                            <img
-                              src="assets/images/chat-img.png"
-                              class="img-fluid"
-                              alt="chat-logo"
-                            />
-                            <span class="total-members">99+</span>
+                    <!-- modal for adding interest -->
+                    <div
+                      class="modal fade"
+                      id="addInterest"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="editName"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="">
+                            <h4
+                              class="text-center font-weight-bold pt-3"
+                              id="exampleModalLongTitle"
+                            >
+                              Add 'sport' to Interests?
+                            </h4>
+                            <!-- <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button> -->
                           </div>
-                          <strong class="strong">Sport</strong>
-                        </div>
-                        <div class="add-icon-container">
-                          <img
-                            src="assets/images/add-white.svg"
-                            class="add-icon"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="chat-block">
-                      <div class="chat-block_flex_between pl-3 pr-3">
-                        <div class="d-flex">
-                          <div class="chat-block_flex_img_container">
-                            <img
-                              src="assets/images/chat-img.png"
-                              class="img-fluid"
-                              alt="chat-logo"
-                            />
-                            <span class="total-members">99+</span>
+                          <div class="text-center">
+                            <div></div>
                           </div>
-                          <strong class="strong">Sport</strong>
-                        </div>
-                        <div class="add-icon-container">
-                          <img
-                            src="assets/images/add-white.svg"
-                            class="add-icon"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="chat-block">
-                      <div class="chat-block_flex_between pl-3 pr-3">
-                        <div class="d-flex">
-                          <div class="chat-block_flex_img_container">
-                            <img
-                              src="assets/images/chat-img.png"
-                              class="img-fluid"
-                              alt="chat-logo"
-                            />
-                            <span class="total-members">99+</span>
+                          <div class="mx-auto pb-4">
+                            <button
+                              type="button"
+                              class="modal-button"
+                              data-dismiss="modal"
+                            >
+                              No
+                            </button>
+                            <button type="button" class="modal-button">
+                              Yes
+                            </button>
                           </div>
-                          <strong class="strong">Sport</strong>
-                        </div>
-                        <div class="add-icon-container">
-                          <img
-                            src="assets/images/add-white.svg"
-                            class="add-icon"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="chat-block">
-                      <div class="chat-block_flex_between pl-3 pr-3">
-                        <div class="d-flex">
-                          <div class="chat-block_flex_img_container">
-                            <img
-                              src="assets/images/chat-img.png"
-                              class="img-fluid"
-                              alt="chat-logo"
-                            />
-                            <span class="total-members">99+</span>
-                          </div>
-                          <strong class="strong">Sport</strong>
-                        </div>
-                        <div class="add-icon-container">
-                          <img
-                            src="assets/images/add-white.svg"
-                            class="add-icon"
-                            alt=""
-                          />
                         </div>
                       </div>
                     </div>
                   </div>
+                  <div class="chat-block">
+                    <div class="chat-block_flex_between pl-3 pr-3">
+                      <div class="d-flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <strong class="strong">Sport</strong>
+                      </div>
+                      <div
+                        class="add-icon-container"
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#addInterest"
+                        class="edit-link"
+                        class="edit-link"
+                      >
+                        <img
+                          src="assets/images/add-white.svg"
+                          class="add-icon"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <!-- modal for adding interest -->
+                    <div
+                      class="modal fade"
+                      id="addInterest"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="editName"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="">
+                            <h4
+                              class="text-center font-weight-bold pt-3"
+                              id="exampleModalLongTitle"
+                            >
+                              Add 'sport' to Interests?
+                            </h4>
+                            <!-- <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button> -->
+                          </div>
+                          <div class="text-center">
+                            <div></div>
+                          </div>
+                          <div class="mx-auto pb-4">
+                            <button
+                              type="button"
+                              class="modal-button"
+                              data-dismiss="modal"
+                            >
+                              No
+                            </button>
+                            <button type="button" class="modal-button">
+                              Yes
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat-block">
+                    <div class="chat-block_flex_between pl-3 pr-3">
+                      <div class="d-flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <strong class="strong">Sport</strong>
+                      </div>
+                      <div
+                        class="add-icon-container"
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#addInterest"
+                        class="edit-link"
+                        class="edit-link"
+                      >
+                        <img
+                          src="assets/images/add-white.svg"
+                          class="add-icon"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <!-- modal for adding interest -->
+                    <div
+                      class="modal fade"
+                      id="addInterest"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="editName"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="">
+                            <h4
+                              class="text-center font-weight-bold pt-3"
+                              id="exampleModalLongTitle"
+                            >
+                              Add 'sport' to Interests?
+                            </h4>
+                            <!-- <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button> -->
+                          </div>
+                          <div class="text-center">
+                            <div></div>
+                          </div>
+                          <div class="mx-auto pb-4">
+                            <button
+                              type="button"
+                              class="modal-button"
+                              data-dismiss="modal"
+                            >
+                              No
+                            </button>
+                            <button type="button" class="modal-button">
+                              Yes
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat-block">
+                    <div class="chat-block_flex_between pl-3 pr-3">
+                      <div class="d-flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <strong class="strong">Sport</strong>
+                      </div>
+                      <div
+                        class="add-icon-container"
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#addInterest"
+                        class="edit-link"
+                        class="edit-link"
+                      >
+                        <img
+                          src="assets/images/add-white.svg"
+                          class="add-icon"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <!-- modal for adding interest -->
+                    <div
+                      class="modal fade"
+                      id="addInterest"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="editName"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="">
+                            <h4
+                              class="text-center font-weight-bold pt-3"
+                              id="exampleModalLongTitle"
+                            >
+                              Add 'sport' to Interests?
+                            </h4>
+                            <!-- <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button> -->
+                          </div>
+                          <div class="text-center">
+                            <div></div>
+                          </div>
+                          <div class="mx-auto pb-4">
+                            <button
+                              type="button"
+                              class="modal-button"
+                              data-dismiss="modal"
+                            >
+                              No
+                            </button>
+                            <button type="button" class="modal-button">
+                              Yes
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="chat-block">
+                    <div class="chat-block_flex_between pl-3 pr-3">
+                      <div class="d-flex">
+                        <div class="chat-block_flex_img_container">
+                          <img
+                            src="assets/images/chat-img.png"
+                            class="img-fluid"
+                            alt="chat-logo"
+                          />
+                          <span class="total-members">99+</span>
+                        </div>
+                        <strong class="strong">Sport</strong>
+                      </div>
+                      <div
+                        class="add-icon-container"
+                        type="button"
+                        data-toggle="modal"
+                        data-target="#addInterest"
+                        class="edit-link"
+                        class="edit-link"
+                      >
+                        <img
+                          src="assets/images/add-white.svg"
+                          class="add-icon"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <!-- modal for adding interest -->
+                    <div
+                      class="modal fade"
+                      id="addInterest"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="editName"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="">
+                            <h4
+                              class="text-center font-weight-bold pt-3"
+                              id="exampleModalLongTitle"
+                            >
+                              Add 'sport' to Interests?
+                            </h4>
+                            <!-- <button
+                          type="button"
+                          class="close"
+                          data-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <span aria-hidden="true">&times;</span>
+                        </button> -->
+                          </div>
+                          <div class="text-center">
+                            <div></div>
+                          </div>
+                          <div class="mx-auto pb-4">
+                            <button
+                              type="button"
+                              class="modal-button"
+                              data-dismiss="modal"
+                            >
+                              No
+                            </button>
+                            <button type="button" class="modal-button">
+                              Yes
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 </div>
               </div>
             </div>

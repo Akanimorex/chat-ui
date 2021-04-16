@@ -32,6 +32,7 @@
   justify-content: space-between;
   background-color: var(--app-maroon);
   padding: 20px;
+  align-items: center;
 }
 
 .messages-head {
@@ -53,7 +54,17 @@
 
 .chat-head-icons {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  display: flex;
+  /* justify-content: space-between; */
+  /* border: solid white; */
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.chat-head-icons .logo {
+  align-self: center;
 }
 
 .chat-head-icons div {
